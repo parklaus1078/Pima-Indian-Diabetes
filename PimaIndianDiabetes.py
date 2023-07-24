@@ -119,4 +119,6 @@ get_clf_eval_by_threshold(y_test, pred_proba[:,1].reshape(-1,1), thresholds)
 binarizer = Binarizer(threshold=0.48)
 pred_th_048 = binarizer.fit_transform(pred_proba[:,1].reshape(-1, 1))
 
+print("\n### ### ### ### ### ### ### ### ### ### ### ### ###")
+
 get_clf_eval(y_test, pred_th_048, pred_proba[:, 1])
